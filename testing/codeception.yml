@@ -1,0 +1,29 @@
+# suite config
+
+suites:
+  api:
+    actor: ApiTester
+    path: .
+    modules:
+      enabled: [PhpBrowser,REST]
+      config:
+        PhpBrowser:
+          url: "%API_URL%"
+        REST:
+          url: "%API_URL%"
+          depends: PhpBrowser
+          part: Json
+
+paths:
+  tests: tests
+  output: tests/_output
+  data: tests/_data
+  support: tests/_support
+
+settings:
+  shuffle: false
+  lint: true
+
+params:
+- env
+- .env

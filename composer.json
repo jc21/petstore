@@ -1,0 +1,22 @@
+{
+  "name": "petstore/php",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Jamie Curnow",
+      "email": "jc@jc21.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0.0",
+    "ext-json": "*",
+    "vlucas/bulletphp": "^1.7",
+    "codeception/codeception": "^2.5",
+    "vlucas/phpdotenv": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Petstore\\": "backend/"
+    }
+  }
+}

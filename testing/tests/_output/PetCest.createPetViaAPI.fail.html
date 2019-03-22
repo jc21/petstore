@@ -1,0 +1,12 @@
+Error: Field does not exist on model: category
+Exception: Field does not exist on model: category in /app/backend/Models/Base.php:78
+Stack trace:
+#0 /app/backend/Entities/Pet.php(34): Petstore\Models\Base->__set('category', Array)
+#1 /app/backend/Routes/pet.php(22): Petstore\Entities\Pet::create(Object(Bullet\Request))
+#2 [internal function]: Petstore\App->{closure}(Object(Bullet\Request))
+#3 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(388): call_user_func(Object(Closure), Object(Bullet\Request))
+#4 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(265): Bullet\App->_runPath('POST', 'pet')
+#5 /app/backend/App.php(109): Bullet\App->run(Object(Bullet\Request))
+#6 /app/backend/init.php(12): Petstore\App->run()
+#7 /app/public/index.php(6): include('/app/backend/in...')
+#8 {main}

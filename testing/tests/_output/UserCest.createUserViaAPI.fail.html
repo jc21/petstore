@@ -1,0 +1,12 @@
+Error: Could not save record: Duplicate entry 'jcurnow' for key 'username'
+Exception: Could not save record: Duplicate entry 'jcurnow' for key 'username' in /app/backend/Models/Base.php:120
+Stack trace:
+#0 /app/backend/Entities/User.php(37): Petstore\Models\Base->save()
+#1 /app/backend/Routes/user.php(22): Petstore\Entities\User::create(Object(Bullet\Request))
+#2 [internal function]: Petstore\App->{closure}(Object(Bullet\Request))
+#3 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(388): call_user_func(Object(Closure), Object(Bullet\Request))
+#4 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(265): Bullet\App->_runPath('POST', 'user')
+#5 /app/backend/App.php(108): Bullet\App->run(Object(Bullet\Request))
+#6 /app/backend/init.php(12): Petstore\App->run()
+#7 /app/public/index.php(6): include('/app/backend/in...')
+#8 {main}

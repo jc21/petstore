@@ -1,0 +1,363 @@
+[
+    {
+        "event": "suiteStart",
+        "suite": "api",
+        "tests": 6
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "ApiCest: Try api"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "ApiCest: Try api"
+        ],
+        "status": "fail",
+        "time": 0.023496150970458984,
+        "trace": [
+            {
+                "function": "seeResponseIsJson",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": []
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2797,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/ApiCest.php",
+                "line": 9,
+                "function": "seeResponseIsJson",
+                "class": "ApiTester",
+                "type": "->",
+                "args": []
+            },
+            {
+                "function": "tryApi",
+                "class": "ApiCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Invalid json: <!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <title>Default Site<\/title>\n        <link href=\"https:\/\/maxcdn.bootstrapcdn.com\/bootstrap\/3.3.7\/css\/bootstrap.min.css\" rel=\"stylesheet\">\n        <style>\n            .jumbotron { margin-top: 50px; }\n        <\/style>\n    <\/head>\n    <body>\n        <div class=\"container\">\n            <div class=\"jumbotron\">\n                <h1>Congratulations!<\/h1>\n                <p>This is Atlas.<\/p>\n                <p>If you're seeing this site then you're trying to access a host that isn't set up yet.<\/p>\n                <p>Log in to the Admin panel to get started.<\/p>\n            <\/div>\n            <p class=\"text-center\"><small>Powered by <a href=\"https:\/\/github.com\/jc21\/nginx-proxy-manager\" target=\"_blank\">Nginx Proxy Manager<\/a><\/small><\/p>\n        <\/div>\n    <\/body>\n<\/html>\n\n. System message: Syntax error.\nFailed asserting that 4 matches expected 0.\n",
+        "output": ""
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create user via api"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create user via api"
+        ],
+        "status": "fail",
+        "time": 0.005496978759765625,
+        "trace": [
+            {
+                "function": "seeResponseCodeIs",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2119,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/UserCest.php",
+                "line": 28,
+                "function": "seeResponseCodeIs",
+                "class": "ApiTester",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "function": "createUserViaAPI",
+                "class": "UserCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Expected HTTP Status Code: 201 (Created). Actual Status Code: 404 (Not Found)\nFailed asserting that 404 matches expected 201.\n",
+        "output": ""
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Update user via api"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Update user via api"
+        ],
+        "status": "fail",
+        "time": 0.0020639896392822266,
+        "trace": [
+            {
+                "function": "seeResponseCodeIs",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": [
+                    200
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2119,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/UserCest.php",
+                "line": 52,
+                "function": "seeResponseCodeIs",
+                "class": "ApiTester",
+                "type": "->",
+                "args": [
+                    200
+                ]
+            },
+            {
+                "function": "updateUserViaAPI",
+                "class": "UserCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Expected HTTP Status Code: 200 (OK). Actual Status Code: 405 (Method Not Allowed)\nFailed asserting that 405 matches expected 200.\n",
+        "output": ""
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create users via api"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create users via api"
+        ],
+        "status": "fail",
+        "time": 0.0019738674163818359,
+        "trace": [
+            {
+                "function": "seeResponseCodeIs",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2119,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/UserCest.php",
+                "line": 89,
+                "function": "seeResponseCodeIs",
+                "class": "ApiTester",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "function": "createUsersViaAPI",
+                "class": "UserCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Expected HTTP Status Code: 201 (Created). Actual Status Code: 404 (Not Found)\nFailed asserting that 404 matches expected 201.\n",
+        "output": ""
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create users via api2"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Create users via api2"
+        ],
+        "status": "fail",
+        "time": 0.0018608570098876953,
+        "trace": [
+            {
+                "function": "seeResponseCodeIs",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2119,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/UserCest.php",
+                "line": 126,
+                "function": "seeResponseCodeIs",
+                "class": "ApiTester",
+                "type": "->",
+                "args": [
+                    201
+                ]
+            },
+            {
+                "function": "createUsersViaAPI2",
+                "class": "UserCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Expected HTTP Status Code: 201 (Created). Actual Status Code: 404 (Not Found)\nFailed asserting that 404 matches expected 201.\n",
+        "output": ""
+    },
+    {
+        "event": "testStart",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Delete users via api"
+        ]
+    },
+    {
+        "event": "test",
+        "suite": "api",
+        "test": [
+            "",
+            "UserCest: Delete users via api"
+        ],
+        "status": "fail",
+        "time": 0.0024249553680419922,
+        "trace": [
+            {
+                "function": "seeResponseCodeIs",
+                "class": "Codeception\\Module\\REST",
+                "type": "->",
+                "args": [
+                    200
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/_support\/_generated\/ApiTesterActions.php",
+                "line": 2119,
+                "function": "runStep",
+                "class": "Codeception\\Scenario",
+                "type": "->",
+                "args": [
+                    {
+                        "executed": true
+                    }
+                ]
+            },
+            {
+                "file": "\/home\/jcurnow\/web\/petstore\/testing\/tests\/UserCest.php",
+                "line": 142,
+                "function": "seeResponseCodeIs",
+                "class": "ApiTester",
+                "type": "->",
+                "args": [
+                    200
+                ]
+            },
+            {
+                "function": "deleteUsersViaAPI",
+                "class": "UserCest",
+                "type": "->",
+                "args": [
+                    {}
+                ]
+            }
+        ],
+        "message": "Expected HTTP Status Code: 200 (OK). Actual Status Code: 405 (Method Not Allowed)\nFailed asserting that 405 matches expected 200.\n",
+        "output": ""
+    }
+]

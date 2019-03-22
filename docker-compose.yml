@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api:
+    image: jc21/php7-nginx:latest
+    ports:
+      - 8989:80
+    volumes:
+      - ./docker/nginx:/etc/nginx/conf.d
+      - .:/app
+    working_dir: /app
+  db:
+    image: jc21/mariadb-aria
+    environment:
+      MYSQL_ROOT_PASSWORD: "petstore"
+      MYSQL_DATABASE: "petstore"
+      MYSQL_USER: "petstore"
+      MYSQL_PASSWORD: "petstore"
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d

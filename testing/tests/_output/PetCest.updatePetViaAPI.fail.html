@@ -1,0 +1,11 @@
+Error: ID was not supplied
+Exception: ID was not supplied in /app/backend/Entities/Pet.php:121
+Stack trace:
+#0 /app/backend/Routes/pet.php(36): Petstore\Entities\Pet::updateByRequest(Object(Bullet\Request))
+#1 [internal function]: Petstore\App->{closure}(Object(Bullet\Request))
+#2 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(388): call_user_func(Object(Closure), Object(Bullet\Request))
+#3 /app/vendor/vlucas/bulletphp/src/Bullet/App.php(265): Bullet\App->_runPath('PUT', 'pet')
+#4 /app/backend/App.php(109): Bullet\App->run(Object(Bullet\Request))
+#5 /app/backend/init.php(12): Petstore\App->run()
+#6 /app/public/index.php(6): include('/app/backend/in...')
+#7 {main}
